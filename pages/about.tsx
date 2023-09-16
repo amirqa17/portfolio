@@ -21,7 +21,7 @@ const About = () => {
                 Self-Promotion
               </h3>
               <p className="text-gray-700" style={commonFontStyle}>
-                Hi, I'm Amir, a passionate Front-End Developer currently based in Japan. I specialize in creating visually stunning and user-friendly web experiences. With a strong foundation in front-end technologies and a knack for design, I'm dedicated to crafting digital solutions that delight users.
+                Hi, I am Amir, a passionate Front-End Developer currently based in Japan. I specialize in creating visually stunning and user-friendly web experiences. With a strong foundation in front-end technologies and a knack for design, I am dedicated to crafting digital solutions that delight users.
               </p>
             </div>
 
@@ -41,7 +41,7 @@ const About = () => {
             {/* Skills Section */}
             <div style={commonFontStyle}>
               <h3 className="text-xl text-black font-semibold mb-2" style={titleFontStyle}>
-                Something I'm familiar with
+                Something I am familiar with
               </h3>
               <ul className="list-disc list-inside text-gray-700" style={commonFontStyle}>
                 <li>HTML/CSS/Tailwind</li>
@@ -56,7 +56,7 @@ const About = () => {
                 Education
               </h3>
               <p className="text-gray-700" style={commonFontStyle}>
-                Bachelor's Degree with Honours in Computer Science - Staffordshire University (2019)
+                Bachelors Degree with Honours in Computer Science - Staffordshire University (2019)
               </p>
             </div>
 
