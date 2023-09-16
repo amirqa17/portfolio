@@ -1,0 +1,7 @@
+/* styles/fonts.css */
+
+@font-face {
+    font-family: 'MyFont';
+    src: url('./fonts/leddotfont.ttf') format('truetype');
+  }
+  

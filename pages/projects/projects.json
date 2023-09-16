@@ -1,0 +1,105 @@
+[
+  {
+    "id": 1,
+    "title": "Framezone - E-Commerce",
+    "description": "Framezone is a modern and feature-rich e-commerce website that offers an exceptional online shopping experience. With its sleek design and user-friendly interface, customers can effortlessly explore a wide range of products, add items to their cart, and securely complete their purchases using the FreedomPay Payment API. Powered by React and styled with Tailwind CSS, the website delivers a seamless and visually appealing interface. The Firebase DB ensures efficient data management, allowing for real-time updates and a reliable shopping experience. Framezone provides customers with a captivating product gallery, interactive comments and reviews, and a streamlined checkout process. Experience the convenience and satisfaction of online shopping at Framezone.",
+    "status": "recent",
+    "imageUrl": "/images/logo2.png",
+    "recent": true,
+    "brief": "E-commerce website",
+    "technologies": ["React", "Tailwind CSS", "Firebase DB", "FreedomPay Payment API", "E-mail Notifications", "Serverless"],
+    "url": "https://framezone.kz",
+    "github": ""
+    },
+      
+    
+  {
+    "id": 2,
+    "title": "Paper manufacturer website",
+    "description": "Example of digital transformation of a paper manufacturing company through Next.js-powered website. Leveraging Next.js, Tailwind CSS, Contentful Blog API, i18N internationalization. I delivered a dynamic platform that showcases the company's expertise and product. With a sleek design, seamless user experience, and real-time content updates, the website captivates visitors and reinforces the brand's credibility. Through i18N internationalization, we cater to a global audience, providing content in multiple languages. The integration of the FreedomPay API enables secure and convenient online transactions. Explore the future of paper manufacturing online with our technologically advanced website.",
+    "status": "recent",
+    "imageUrl": "/images/logo2.png",
+    "recent": true,
+    "brief": "E-commerce website",
+    "technologies": ["React", "Tailwind CSS", "Firebase DB", "FreedomPay Payment API", "E-mail Notifications", "Serverless"],
+    "url": "https://framezone.kz",
+    "github": ""
+    },
+
+
+    {
+      "id": 3,
+      "title": "Pharmaceutical company",
+      "description": "Description of Project 4",
+      "status": "recent",
+      "imageUrl": "/images/logo2.png",
+      "recent": true,
+      "brief": "E-commerce website",
+      "technologies": ["React", "Tailwind CSS", "Firebase DB", "FreedomPay Payment API", "E-mail Notifications", "Serverless"],
+      "url": "https://framezone.kz",
+      "github": ""
+  },
+  {
+    "id": 4,
+    "title": "Gamestore",
+    "description": "Description of Project 4",
+    "status": "recent",
+    "imageUrl": "/images/logo2.png",
+    "recent": true,
+    "brief": "E-commerce website",
+    "technologies": ["React", "Tailwind CSS", "Firebase DB", "FreedomPay Payment API", "E-mail Notifications", "Serverless"],
+    "url": "https://framezone.kz",
+    "github": ""
+},
+{
+  "id": 5,
+  "title": "Portfolio",
+  "description": "Description of Project 4",
+  "status": "recent",
+  "imageUrl": "/images/logo2.png",
+  "recent": true,
+  "brief": "E-commerce website",
+  "technologies": ["React", "Tailwind CSS", "Firebase DB", "FreedomPay Payment API", "E-mail Notifications", "Serverless"],
+  "url": "https://framezone.kz",
+  "github": ""
+},
+{
+  "id": 6,
+  "title": "Pizzeria",
+  "description": "Description of Project 4",
+  "status": "recent",
+    "imageUrl": "/images/logo2.png",
+    "recent": true,
+    "brief": "E-commerce website",
+    "technologies": ["React", "Tailwind CSS", "Firebase DB", "FreedomPay Payment API", "E-mail Notifications", "Serverless"],
+    "url": "https://framezone.kz",
+    "github": ""
+},
+{
+  "id": 7,
+  "title": "Tizim",
+  "description": "Description of Project 4",
+  "status": "recent",
+  "imageUrl": "/images/logo2.png",
+  "recent": true,
+  "brief": "E-commerce website",
+  "technologies": ["React", "Tailwind CSS", "Firebase DB", "FreedomPay Payment API", "E-mail Notifications", "Serverless"],
+  "url": "https://framezone.kz",
+  "github": ""
+},
+{
+  "id": 8,
+  "title": "Hospital Management System",
+  "description": "Description of Project 4",
+  "status": "recent",
+  "imageUrl": "/images/logo2.png",
+  "recent": true,
+  "brief": "E-commerce website",
+  "technologies": ["React", "Tailwind CSS", "Firebase DB", "FreedomPay Payment API", "E-mail Notifications", "Serverless"],
+  "url": "https://framezone.kz",
+  "github": ""
+}
+
+
+  ]
+  
