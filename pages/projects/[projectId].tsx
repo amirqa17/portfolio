@@ -87,15 +87,16 @@ const ProjectPage = () => {
             </div>
             
           </div>
-          {project.imageUrlDescription.map((imageUrl, index) => (
+          {project.imageUrlDescription?.map((imageUrl, index) => (
   <img
     key={index}
     src={imageUrl}
     loading="lazy"
-    alt={`Photo ${index + 1} of ${project.title}`}
-    className="my-4 h-full w-full object-contain object-center"
+    alt={`Photo of ${project.title}`}
+    className="h-full w-full object-contain object-center"
   />
 ))}
+
 
         </div>
         
