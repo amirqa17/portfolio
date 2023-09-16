@@ -23,7 +23,7 @@ const Navbar: React.FC = () => {
         <nav className={`gap-12 lg:flex ${isMobileMenuOpen ? 'block' : 'hidden'}`}>
           <Link href="/" className="text-lg font-semibold text-indigo-500">Home
           </Link>
-          <Link href="/projects" className="text-lg font-semibold text-gray-600 transition duration-100 hover:text-indigo-500 active:text-indigo-700">Projects
+          <Link href="/" className="text-lg font-semibold text-indigo-500">About me
           </Link>
           <Link href="/contact" className="text-lg font-semibold text-gray-600 transition duration-100 hover:text-indigo-500 active:text-indigo-700">Contact me
           </Link>

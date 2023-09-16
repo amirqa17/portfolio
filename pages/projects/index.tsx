@@ -34,8 +34,8 @@ const Projects = () => {
   };
 
   return (
-    <Layout>
-      <div className="bg-white py-6 sm:py-8 lg:py-4 lg:px-24">
+ 
+      <div className="bg-white py-6 sm:py-8 lg:py-12 lg:px-4">
         <div className="pacman-container">
           <div className="pacman"></div>
         </div>
@@ -43,7 +43,7 @@ const Projects = () => {
         <div className="mx-auto max-w-screen-3xl px-4 md:px-8">
           <h2 className="mb-4 flex items-center justify-center text-2xl font-bold text-gray-800 md:mb-8 lg:text-3xl xl:mb-12 font-family-myfont">
             <RiArchiveDrawerLine className="mr-2" />
-            Projects
+           some of the projects
           </h2>
           
           {/* Iterate over projectsData and render ProjectCard for each project */}
@@ -70,7 +70,7 @@ const Projects = () => {
           </div>
         </div>
       </div>
-    </Layout>
+  
   );
 };
 
@@ -120,7 +120,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ project, onClick, tagColors }
     />
 
     {project.status && (
-      <div className="absolute top-2 right-2 bg-yellow-500 text-white text-xs font-semibold px-2 py-1 rounded-md transform -translate-x-1/2 -translate-y-1/2">
+      <div className="absolute top-2 right-2 bg-purple-500 text-white text-xs font-semibold px-2 py-1 rounded-md transform -translate-x-1/2 -translate-y-1/2">
         {project.status}
       </div>
     )}

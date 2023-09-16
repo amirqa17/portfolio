@@ -1,81 +1,84 @@
 import Layout from '@/app/layout';
 import React from 'react';
+import { RiArchiveDrawerLine } from 'react-icons/ri';
 
 const About = () => {
+  const commonFontStyle = { fontFamily: 'Arial, sans-serif', fontSize: '18px' };
+  const titleFontStyle = { ...commonFontStyle, fontSize: '24px', fontWeight: 'bold' };
+
   return (
     <Layout>
-      <div className="text-center py-6 sm:py-8">
-        <h1 className="text-2xl font-bold mb-4">Contact Me</h1>
-        <div className="flex flex-col items-center">
-          <p className="text-gray-700 mb-4">Feel free to reach out to me for any inquiries or collaborations.</p>
-          <div className="flex flex-col space-y-4">
-            <div className="flex items-center">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                className="h-6 w-6 text-gray-700 mr-2"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth={2}
-                  d="M12 6v6m0 0v6m0-6h6m-6 0H6"
-                />
-              </svg>
-              <a href="#" className="hidden rounded-lg bg-gray-200 px-8 py-3 text-center text-sm font-semibold text-gray-500 outline-none ring-indigo-300 transition duration-100 hover:bg-gray-300 focus-visible:ring active:text-gray-700 md:text-base lg:inline-block">Email: Ibraimov.amir1996@gmail.com</a>
+      <div className="bg-white py-6 sm:py-8 lg:py-12">
+        <div className="mx-auto max-w-screen-2xl px-4 md:px-8">
+        <h2 className="mb-4 flex text-black items-center justify-center text-2xl font-bold text-gray-800 md:mb-8 lg:text-3xl xl:mb-12 font-family-myfont">
+            <RiArchiveDrawerLine className="mr-2" />
+           about me
+          </h2>
+          <div className="flex flex-col space-y-6">
+            {/* Self-Promotion Section */}
+            <div style={commonFontStyle}>
+              <h3 className="text-xl font-semibold mb-2" style={titleFontStyle}>
+                Self-Promotion
+              </h3>
+              <p className="text-gray-700" style={commonFontStyle}>
+                Hi, I'm Amir, a passionate Front-End Developer currently based in Japan. I specialize in creating visually stunning and user-friendly web experiences. With a strong foundation in front-end technologies and a knack for design, I'm dedicated to crafting digital solutions that delight users.
+              </p>
             </div>
-            <div className="flex items-center">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                className="h-6 w-6 text-gray-700 mr-2"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth={2}
-                  d="M12 6v6m0 0v6m0-6h6m-6 0H6"
-                />
-              </svg>
-              <a href="#" className="hidden rounded-lg bg-gray-200 px-8 py-3 text-center text-sm font-semibold text-gray-500 outline-none ring-indigo-300 transition duration-100 hover:bg-gray-300 focus-visible:ring active:text-gray-700 md:text-base lg:inline-block">Phone: +81 070 3137 1220</a>
-            </div>
-            <div className="flex items-center">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                className="h-6 w-6 text-gray-700 mr-2"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth={2}
-                  d="M12 6v6m0 0v6m0-6h6m-6 0H6"
-                />
-              </svg>
 
+            {/* Languages Section */}
+            <div style={commonFontStyle}>
+              <h3 className="text-xl text-black font-semibold mb-2" style={titleFontStyle}>
+                Languages
+              </h3>
+              <ul className="list-disc list-inside text-gray-700" style={commonFontStyle}>
+                <li>English (Full Proficienty)</li>
+                <li>Japanese (JLPT N3)</li>
+                <li>Russian / Kazakh (Native)</li>
+                {/* Add more languages as needed */}
+              </ul>
             </div>
-            <div className="flex items-center">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                className="h-6 w-6 text-gray-700 mr-2"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth={2}
-                  d="M12 6v6m0 0v6m0-6h6m-6 0H6"
-                />
-              </svg>
-              <a href="#" className="hidden rounded-lg bg-gray-200 px-8 py-3 text-center text-sm font-semibold text-gray-500 outline-none ring-indigo-300 transition duration-100 hover:bg-gray-300 focus-visible:ring active:text-gray-700 md:text-base lg:inline-block">+81 070 3137 1220</a>
+
+            {/* Skills Section */}
+            <div style={commonFontStyle}>
+              <h3 className="text-xl text-black font-semibold mb-2" style={titleFontStyle}>
+                Something I'm familiar with
+              </h3>
+              <ul className="list-disc list-inside text-gray-700" style={commonFontStyle}>
+                <li>HTML/CSS/Tailwind</li>
+                <li>React</li>
+                {/* Add more skills as needed */}
+              </ul>
+            </div>
+
+            {/* Education Section */}
+            <div style={commonFontStyle}>
+              <h3 className="text-xl text-black font-semibold mb-2" style={titleFontStyle}>
+                Education
+              </h3>
+              <p className="text-gray-700" style={commonFontStyle}>
+                Bachelor's Degree with Honours in Computer Science - Staffordshire University (2019)
+              </p>
+            </div>
+
+            {/* Work Experience Section */}
+            <div style={commonFontStyle}>
+              <h3 className="text-xl text-black font-semibold mb-2" style={titleFontStyle}>
+                Work Experience
+              </h3>
+              <p className="text-gray-700" style={commonFontStyle}>
+                Front-End Developer at XYZ Company - Tokyo, Japan (Year - Present)
+              </p>
+            </div>
+
+            {/* Contact Information Section */}
+            <div style={commonFontStyle}>
+              <h3 className="text-xl text-black font-semibold mb-2" style={titleFontStyle}>
+                Contact Information
+              </h3>
+              <p className="text-gray-700" style={commonFontStyle}>Email: Ibraimov.amir1996@gmail.com</p>
+              <p className="text-gray-700" style={commonFontStyle}>Phone: +81 070 3137 1220</p>
+              <p className="text-gray-700" style={commonFontStyle}>LinkedIn: your-linkedin-profile</p>
+              <p className="text-gray-700" style={commonFontStyle}>GitHub: your-github-profile</p>
             </div>
           </div>
         </div>
