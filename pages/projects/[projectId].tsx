@@ -25,12 +25,11 @@ const ProjectPage = () => {
     // Add more colors as needed
   ];
 
-  const project = projectsData.find((proj: Project) => proj.id === parseInt(projectId as string));
+  const project = projectsData.find((proj) => proj.id === parseInt(projectId as string));
 
   if (!project) {
     return <div>Project not found</div>;
   }
-
   return (
     <Layout>
       <div className="bg-white py-6 sm:py-8 lg:py-12">
