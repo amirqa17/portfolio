@@ -13,7 +13,7 @@ const Navbar: React.FC = () => {
   return (
     <div className="mx-auto max-w-screen-2xl px-4 md:px-8 mb-8">
   
-  <nav className="bg-gray-100 text-indigo-800 p-4">
+  <nav className="bg-white text-indigo-800 p-4">
       <div className="container mx-auto flex items-center justify-between">
       <Link href="/" passHref className="inline-flex items-center gap-2.5 text-xl font-bold text-black md:text-3xl" aria-label="logo">
             <TbAlignBoxRightBottomFilled className="text-2xl lg:text-4xl" />

@@ -3,6 +3,7 @@ import Navbar from './components/navbar';
 import '@/app/globals.css';
 import '@/app/fonts.css';
 import localFont from 'next/font/local'
+import Footer from './components/footer';
 
 
 
@@ -18,7 +19,7 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
       <Navbar/>
 
       {children}
-
+<Footer/>
     </div> 
   </main>
   );

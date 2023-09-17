@@ -68,7 +68,7 @@
   "recent": true,
   "online":false,
   "brief": "E-commerce website",
-  "technologies": ["React", "Tailwind CSS", "Firebase DB", "FreedomPay Payment API", "E-mail Notifications", "Serverless"],
+  "technologies": ["React", "Tailwind CSS","HTML","CSS"],
   "url": "/",
   "github": ""
 }
