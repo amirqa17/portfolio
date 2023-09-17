@@ -1,20 +1,24 @@
 [
   {
-    "id": 1,
+    "id": 2,
     "title": "Framezone - E-Commerce",
     "description": "Framezone is a modern and feature-rich e-commerce website that offers an exceptional online shopping experience. With its sleek design and user-friendly interface, customers can effortlessly explore a wide range of products, add items to their cart, and securely complete their purchases using the FreedomPay Payment API. Powered by React and styled with Tailwind CSS, the website delivers a seamless and visually appealing interface. The Firebase DB ensures efficient data management, allowing for real-time updates and a reliable shopping experience. Framezone provides customers with a captivating product gallery, interactive comments and reviews, and a streamlined checkout process. Experience the convenience and satisfaction of online shopping at Framezone.",
     "status": "recent project",
     "imageUrl": "/images/logo2.png",
+    "imageUrlDescription": [
+      "/images/framezone_site.gif"
+    ],
+    "online":false,
     "recent": true,
     "brief": "E-commerce website",
     "technologies": ["React", "Tailwind CSS", "Firebase DB", "FreedomPay Payment API", "E-mail Notifications", "Serverless"],
-    "url": "https://framezone.kz",
-    "github": ""
+    "url": "/",
+    "github": "https://github.com/amirqa17/framezone"
     },
       
     
   {
-    "id": 2,
+    "id": 1,
     "title": "Paper manufacturer website",
     "description": "Example of digital transformation of a paper manufacturing company through Next.js-powered website. Leveraging Next.js, Tailwind CSS, Contentful Blog API, i18N internationalization. I delivered a dynamic platform that showcases the company's expertise and product. With a sleek design, seamless user experience, and real-time content updates, the website captivates visitors and reinforces the brand's credibility. Through i18N internationalization, we cater to a global audience, providing content in multiple languages. The integration of the FreedomPay API enables secure and convenient online transactions. Explore the future of paper manufacturing online with our technologically advanced website.",
     "status": "recent project",
@@ -24,17 +28,19 @@
       "/images/akkypaper_site2.png"
     ],
     "recent": true,
+    "online":false,
     "brief": "E-commerce website for pharmaceutical company",
-    "technologies": ["React", "Tailwind CSS", "Firebase DB", "FreedomPay Payment API", "E-mail Notifications", "Serverless"],
-    "url": "https://altaysorbent.org",
-    "github": ""
+    "technologies": ["Next.js", "Tailwind CSS","i18n Internationalization", "Contentful API"],
+    "url": "/",
+    "github": "/"
     },
 
 
     {
       "id": 3,
-      "title": "Pharmaceutical company",
-      "description": "Description of Project 4",
+      "title": "Altaysorbent.org",
+      "description":"As part of a collaborative effort, I contributed to the development of Altaysorbent.org, a dynamic website built using Next.js. This project aimed to provide a comprehensive online platform for Altaysorbent, a pharmaceutical company specializing in a unique health supplement. The website was designed to cater to a broad international audience, including customers in CIS and European countries. The inclusion of real-time shipping quotes based on destination ensures a user-friendly experience. Payment processing through the PayBox API ensured the safety of users' financial information. Utilizing Contentful as a headless CMS, the project team could manage product information, articles, and other content efficiently. The website was optimized for mobile devices, ensuring a seamless experience across different screen sizes."
+,
       "status": "old project",
       "imageUrl": "/images/altaysorbent.png",
       "imageUrlDescription": [
@@ -43,73 +49,27 @@
         "/images/altaysorbent_site3.png"
       ],
       "recent": false,
+      "online":true,
       "brief": "E-commerce website",
-      "technologies": ["React", "Tailwind CSS", "Firebase DB", "FreedomPay Payment API", "E-mail Notifications", "Serverless"],
-      "url": "https://framezone.kz",
-      "github": ""
+      "technologies": ["Next.js", "Tailwind CSS", "Firebase DB", "PayBox Payment API", "E-mail Notifications", "CDEK API", "KazPost API"],
+      "url": "https://altaysorbent.org",
+      "github": "https://github.com/altaysorbent/website"
   },
-  {
-    "id": 4,
-    "title": "Gamestore",
-    "description": "Description of Project 4",
-    "status": "old project",
-    "imageUrl": "/images/gamestore.png",
-    "imageUrlDescription": [
-      "/images/altaysorbent_site.png",
-      "/images/altaysorbent_site2.png",
-      "/images/altaysorbent_site3.png"
-    ],
-    "recent": true,
-    "brief": "E-commerce website",
-    "technologies": ["React", "Tailwind CSS", "Firebase DB", "FreedomPay Payment API", "E-mail Notifications", "Serverless"],
-    "url": "https://framezone.kz",
-    "github": ""
-},
-{
-  "id": 5,
-  "title": "Portfolio",
-  "description": "Description of Project 4",
-  "status": "old project",
-  "imageUrl": "/images/portfolio.gif",
-  "imageUrlDescription": [
-    "/images/altaysorbent_site.png",
-    "/images/altaysorbent_site2.png",
-    "/images/altaysorbent_site3.png"
-  ],
-  "recent": true,
-  "brief": "E-commerce website",
-  "technologies": ["React", "Tailwind CSS", "Firebase DB", "FreedomPay Payment API", "E-mail Notifications", "Serverless"],
-  "url": "https://framezone.kz",
-  "github": ""
-},
-{
-  "id": 6,
-  "title": "Pizzeria",
-  "description": "Description of Project 4",
-  "status": "old project",
-    "imageUrl": "/images/pizza.png",
-    "imageUrlDescription": [
-      "/images/pizza.png"
-    ],
-    "recent": true,
-    "brief": "E-commerce website",
-    "technologies": ["React", "Tailwind CSS", "Firebase DB", "FreedomPay Payment API", "E-mail Notifications", "Serverless"],
-    "url": "https://framezone.kz",
-    "github": ""
-},
+
 {
   "id": 7,
   "title": "Tizim",
-  "description": "Description of Project 4",
+  "description": "A React-based web application showcasing TIZIM Construction Company's top-notch projects. It features a modern design, easy navigation, and interactive elements for an engaging user experience.",
   "status": "old project",
-  "imageUrl": "/images/tizim_logo.png",
+  "imageUrl": "/images/tizim.png",
   "imageUrlDescription": [
     "/images/tizim.png"
   ],
   "recent": true,
+  "online":false,
   "brief": "E-commerce website",
   "technologies": ["React", "Tailwind CSS", "Firebase DB", "FreedomPay Payment API", "E-mail Notifications", "Serverless"],
-  "url": "https://framezone.kz",
+  "url": "/",
   "github": ""
 }
 

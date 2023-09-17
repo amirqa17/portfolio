@@ -30,9 +30,8 @@ const Home = () => {
 
 
   <div className="flex w-full flex-col gap-2.5 sm:flex-row sm:justify-center">
-  <Link href="/about" className="inline-block rounded-lg bg-green-100 px-8 py-3 text-center text-sm font-semibold text-gray-500 outline-none ring-indigo-300 transition duration-100 hover:bg-gray-300 focus-visible:ring active:text-gray-700 md:text-base">View my CV
- </Link> 
-<Link href="/about" className="inline-block rounded-lg bg-gray-200 px-8 py-3 text-center text-sm font-semibold text-gray-500 outline-none ring-indigo-300 transition duration-100 hover:bg-gray-300 focus-visible:ring active:text-gray-700 md:text-base">Get to know me
+ 
+<Link href="/about" className="inline-block rounded-lg bg-gray-200 px-8 py-3 text-center text-sm font-semibold text-gray-500 outline-none ring-indigo-300 transition duration-100 hover:bg-gray-300 focus-visible:ring active:text-gray-700 md:text-base">Get to know me / Contact me
  </Link> 
  </div>
 </div>

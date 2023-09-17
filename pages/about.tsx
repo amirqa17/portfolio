@@ -60,28 +60,28 @@ const About = () => {
               </p>
             </div>
 
-            {/* Contact Information Section */}
-            <div style={commonFontStyle}>
+     <div style={commonFontStyle}>
               <h3 className="text-xl text-black font-semibold mb-2" style={titleFontStyle}>
                 Contact Information
               </h3>
               <p className="text-gray-700" style={commonFontStyle}>
-  Email: <a href="mailto:Ibraimov.amir1996@gmail.com">Ibraimov.amir1996@gmail.com</a>
-</p>
-
-              <p className="text-gray-700" style={commonFontStyle}>Phone: +81 070 3137 1220</p>
-              <a href="https://www.linkedin.com" className="ml-4 text-gray-500 hover:text-black" target="_blank" rel="noopener noreferrer">
-            <BsLinkedin size={34} />
-          </a>
-          <a href="https://www.linkedin.com" className="ml-4 text-gray-500 hover:text-black" target="_blank" rel="noopener noreferrer">
-            <BsTelegram size={34} />
-          </a>
-          <a href="https://www.linkedin.com" className="ml-4 text-gray-500 hover:text-black" target="_blank" rel="noopener noreferrer">
-            <BsWhatsapp size={34} />
-          </a>
-          <a href="https://www.linkedin.com" className="ml-4 text-gray-500 hover:text-black" target="_blank" rel="noopener noreferrer">
-            <BsLine size={34} />
-          </a>
+                Email: <a href="mailto:Ibraimov.amir1996@gmail.com">Ibraimov.amir1996@gmail.com</a>
+              </p>
+              <p className="text-gray-700" style={commonFontStyle}>
+                Phone: +81 070 3137 1220
+              </p>
+              <div className="flex items-center mt-4">
+                <a href="https://www.linkedin.com/in/amiribraimov/" className="text-gray-500 hover:text-black" target="_blank" rel="noopener noreferrer">
+                  <BsLinkedin size={34} />
+                </a>
+                <a href="https://t.me/Amiracle17" className="ml-4 text-gray-500 hover:text-black" target="_blank" rel="noopener noreferrer">
+                  <BsTelegram size={34} />
+                </a>
+                <a href="https://wa.me/+77776341393" className="ml-4 text-gray-500 hover:text-black" target="_blank" rel="noopener noreferrer">
+                  <BsWhatsapp size={34} />
+                </a>
+              
+              </div>
             </div>
           </div>
         </div>

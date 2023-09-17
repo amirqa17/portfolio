@@ -2,8 +2,9 @@ import React from 'react';
 import { useRouter } from 'next/router';
 import projectsData from './projects.json';
 import Layout from '@/app/layout';
-import { BiPlanet } from 'react-icons/bi';
-import { AiFillGithub } from 'react-icons/ai';
+import { BiArrowToLeft, BiPlanet } from 'react-icons/bi';
+import { AiFillGithub, AiOutlineArrowLeft } from 'react-icons/ai';
+import Link from 'next/link';
 
 interface Project {
   id: number;
@@ -12,6 +13,7 @@ interface Project {
   imageUrl: string;
   imageUrlDescription: string[]; // Update the interface to include imageUrlDescription
   technologies: string[];
+  online: boolean;
 }
 
 const ProjectPage = () => {
@@ -30,12 +32,25 @@ const ProjectPage = () => {
   if (!project) {
     return <div>Project not found</div>;
   }
+
   return (
     <Layout>
       <div className="bg-white py-6 sm:py-8 lg:py-12">
-        <h2 className="mb-4 flex items-center justify-center text-2xl font-bold text-gray-800 md:mb-8 lg:text-3xl xl:mb-12 font-family-myfont">
-          {project.title}
-        </h2>
+        <div className="mx-auto max-w-screen-2xl px-4 md:px-8 flex justify-between items-center">
+        <Link href="/" className="">
+        <span className="text-gray-300 hover:text-gray-400">
+
+
+       
+      <AiOutlineArrowLeft size={82} />
+  </span>
+ 
+</Link>
+          <h2 className="text-2xl md:text-3xl lg:text-4xl text-black mx-auto text-center">
+            {project.title}
+          </h2>
+        </div>
+
         <div className="mx-auto max-w-screen-2xl px-4 md:px-8">
           <div className="flex flex-col overflow-hidden rounded-lg bg-gray-100 sm:flex-row md:h-80 lg:h-full">
             <div className="order-first h-48 w-full bg-gray-100 sm:order-none sm:h-auto sm:w-1/2 lg:w-2/5">
@@ -53,20 +68,15 @@ const ProjectPage = () => {
               </p>
 
               <div className="mt-auto flex items-center">
-                <a
-                  href={project.url}
-                  className="w-3/12 inline-flex items-center justify-center rounded-lg bg-white px-8 py-3 text-center text-sm font-semibold text-gray-800 outline-none ring-indigo-300 transition duration-100 hover:bg-gray-100 focus-visible:ring active:bg-gray-200 md:text-base"
-                >
-                  <BiPlanet className="mr-2" />
-                  View Online
-                </a>
-                <a
-                  href="#"
-                  className="inline-flex items-center justify-center rounded-lg bg-white px-8 py-3 text-center text-sm font-semibold text-gray-800 outline-none ring-indigo-300 transition duration-100 hover:bg-gray-100 focus-visible:ring active:bg-gray-200 md:text-base ml-4"
-                >
-                  <AiFillGithub className="mr-2" />
-                  GitHub link
-                </a>
+                {project.online && (
+                  <a
+                    href={project.url}
+                    className="w-3/12 inline-flex items-center justify-center rounded-lg bg-indigo-600 px-8 py-3 text-center text-sm font-semibold text-white outline-none ring-indigo-300 transition duration-100 hover:bg-indigo-400 focus-visible:ring active:bg-gray-100 md:text-base"
+                  >
+                    <BiPlanet className="mr-2" />
+                    View Online
+                  </a>
+                )}
               </div>
 
               <div className="mt-4 flex flex-wrap">
@@ -83,23 +93,20 @@ const ProjectPage = () => {
               </div>
 
               {/* Display imageUrlDescription images */}
-             
             </div>
-            
           </div>
-          {project.imageUrlDescription?.map((imageUrl, index) => (
-  <img
-    key={index}
-    src={imageUrl}
-    loading="lazy"
-    alt={`Photo of ${project.title}`}
-    className="h-full w-full object-contain object-center"
-  />
-))}
-
-
+          <div className="pt-12">
+            {project.imageUrlDescription?.map((imageUrl, index) => (
+              <img
+                key={index}
+                src={imageUrl}
+                loading="lazy"
+                alt={`Photo of ${project.title}`}
+                className="h-full w-full object-contain object-center"
+              />
+            ))}
+          </div>
         </div>
-        
       </div>
     </Layout>
   );
