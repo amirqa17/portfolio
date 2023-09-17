@@ -37,8 +37,8 @@ const ProjectPage = () => {
           {project.title}
         </h2>
         <div className="mx-auto max-w-screen-2xl px-4 md:px-8">
-          <div className="flex flex-col overflow-hidden rounded-lg bg-gray-200 sm:flex-row md:h-80 lg:h-full">
-            <div className="order-first h-48 w-full bg-gray-300 sm:order-none sm:h-auto sm:w-1/2 lg:w-2/5">
+          <div className="flex flex-col overflow-hidden rounded-lg bg-gray-100 sm:flex-row md:h-80 lg:h-full">
+            <div className="order-first h-48 w-full bg-gray-100 sm:order-none sm:h-auto sm:w-1/2 lg:w-2/5">
               <img
                 src={project.imageUrl}
                 loading="lazy"

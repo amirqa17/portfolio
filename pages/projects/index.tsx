@@ -43,12 +43,12 @@ const Projects = () => {
         <div className="mx-auto max-w-screen-3xl px-4 md:px-8">
           <h2 className="mb-4 flex items-center justify-center text-2xl font-bold text-gray-800 md:mb-8 lg:text-3xl xl:mb-12 font-family-myfont">
             <RiArchiveDrawerLine className="mr-2" />
-           some of the projects
+           some of my projects
           </h2>
           
           {/* Iterate over projectsData and render ProjectCard for each project */}
         
-          <div className="mb-4 grid grid-cols-2 gap-4 sm:grid-cols-3 md:mb-8 md:grid-cols-4 md:gap-6 xl:gap-8" >
+          <div className="mb-4 grid grid-cols-1 gap-4 sm:grid-cols-2 md:mb-8 md:grid-cols-2 md:gap-6 xl:gap-8">
             {projectsData.map((project) => (
 
 
@@ -114,13 +114,13 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ project, onClick, tagColors }
       src={project.imageUrl}
       loading="lazy"
       alt={`Photo of ${project.title}`}
-      className={`absolute inset-0 h-full w-fit object-contain object-center transition duration-200 group-hover:blur-sm group-hover:scale-105 ${
+      className={`absolute mx-auto inset-0 h-full w-fit object-contain object-center transition duration-200 group-hover:blur-sm group-hover:scale-105 ${
         hovered ? 'blur-sm scale-105' : ''
       }`}
     />
 
     {project.status && (
-      <div className="absolute top-2 right-2 bg-purple-500 text-white text-xs font-semibold px-2 py-1 rounded-md transform -translate-x-1/2 -translate-y-1/2">
+      <div className="absolute top-2 right-2 bg-indigo-500 text-white text-xs font-semibold px-2 py-1 rounded-md transform -translate-x-1/2 -translate-y-1/2">
         {project.status}
       </div>
     )}

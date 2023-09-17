@@ -4,7 +4,7 @@ import '@/app/globals.css';
 import '@/app/fonts.css';
 import localFont from 'next/font/local'
 
-const myFont = localFont({ src: './fonts/leddotfont.ttf' })
+
 
 type LayoutProps = {
   children: ReactNode;
@@ -12,7 +12,7 @@ type LayoutProps = {
 
 const Layout: React.FC<LayoutProps> = ({ children }) => {
   return (
-    <main className={myFont.className}>
+    <main >
  
     <div>
       <Navbar/>

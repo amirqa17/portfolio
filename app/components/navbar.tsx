@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { FaLocationArrow } from 'react-icons/fa';
 import { TbAlignBoxRightBottomFilled } from 'react-icons/tb';
-import { BsLinkedin } from 'react-icons/bs';
+import { BsGithub, BsLine, BsLinkedin, BsTelegram, BsWhatsapp } from 'react-icons/bs';
 import Link from 'next/link';
 
 const Navbar: React.FC = () => {
@@ -16,31 +16,28 @@ const Navbar: React.FC = () => {
       <header className="mb-4 flex items-center justify-between py-4 md:py-8">
         <Link href="/" className="inline-flex items-center gap-2.5 text-2xl font-bold text-black md:text-3xl" aria-label="logo">
             <TbAlignBoxRightBottomFilled />
-            / Portfolio
+            / Amir I.
         
         </Link>
 
         <nav className={`gap-12 lg:flex ${isMobileMenuOpen ? 'block' : 'hidden'}`}>
           <Link href="/" className="text-lg font-semibold text-indigo-500">Home
           </Link>
-          <Link href="/" className="text-lg font-semibold text-indigo-500">About me
+          <Link href="/about" className="text-lg font-semibold text-indigo-500">About me / Contact
           </Link>
-          <Link href="/contact" className="text-lg font-semibold text-gray-600 transition duration-100 hover:text-indigo-500 active:text-indigo-700">Contact me
-          </Link>
+         
         </nav>
-
+       
+    
         <div className="flex items-center">
           <a href="#" className="hidden rounded-lg bg-gray-200 px-8 py-3 text-center text-sm font-semibold text-gray-500 outline-none ring-indigo-300 transition duration-100 hover:bg-gray-300 focus-visible:ring active:text-gray-700 md:text-base lg:inline-block">
             <span className="flex items-center text-black">
               <FaLocationArrow className="mr-1" />
-              Japan
+              松戸市、千葉県、日本
             </span>
             +81 070 3137 1220
           </a>
-
-          <a href="https://www.linkedin.com" className="ml-4 text-gray-500 hover:text-black" target="_blank" rel="noopener noreferrer">
-            <BsLinkedin size={24} />
-          </a>
+         
         </div>
 
         <button
