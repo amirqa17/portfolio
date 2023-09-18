@@ -17,7 +17,7 @@ const About = () => {
           <div className="flex flex-col space-y-8 md:space-y-12">
             <div>
               <p className="text-gray-700 text-lg md:text-xl font-light lg:mt-12">
-                Hi, I'm Amir, a passionate Front-End Developer based in Japan. I specialize in creating visually stunning and user-friendly web experiences. With a strong foundation in front-end technologies and a knack for design, I'm dedicated to crafting digital solutions that delight users.
+                Hi, I am Amir, a passionate Front-End Developer based in Japan. I specialize in creating visually stunning and user-friendly web experiences. With a strong foundation in front-end technologies and a knack for design, I am dedicated to crafting digital solutions that delight users.
               </p>
             </div>
 
