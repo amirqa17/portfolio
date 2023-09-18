@@ -27,7 +27,7 @@ const Navbar: React.FC = () => {
           </Link>
        
         </div>
-        <div className="flex items-center">
+        <div className="flex pl-48">
           <a href="#" className="hidden rounded-lg bg-gray-200 px-4 py-2 text-base font-semibold text-gray-500 outline-none ring-indigo-300 transition duration-100 hover:bg-gray-300 focus-visible:ring active:text-gray-700 lg:text-lg lg:inline-block">
             <span className="flex items-center text-black">
               <FaLocationArrow className="mr-1" />
@@ -90,7 +90,10 @@ const Navbar: React.FC = () => {
         
           </ul>
         </div>
+
       )}
+
+      
     </nav>
 
    

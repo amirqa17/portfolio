@@ -61,25 +61,28 @@ const ProjectPage = () => {
                 className="h-full w-full object-contain object-center"
               />
             </div>
-            <div className="flex w-full flex-col p-4 sm:w-1/2 sm:p-8 lg:w-3/5">
+            <div className="flex w-full flex-col p-4 sm:w-1/2 sm:p-8 lg:w-6/6">
               <h2 className="mb-4 text-xl font-bold text-gray-800 md:text-2xl lg:text-4xl">{project.title}</h2>
               <p className="mb-8 max-w-md text-gray-600 font-normal" style={{ fontFamily: 'Arial, sans-serif' }}>
                 {project.description}
               </p>
 
               <div className="mt-auto flex items-center">
-                {project.online && (
-                  <a
-                    href={project.url}
-                    className="w-3/12 inline-flex items-center justify-center rounded-lg bg-indigo-600 px-8 py-3 text-center text-sm font-semibold text-white outline-none ring-indigo-300 transition duration-100 hover:bg-indigo-400 focus-visible:ring active:bg-gray-100 md:text-base"
-                  >
-                    <BiPlanet className="mr-2" />
-                    View Online
-                  </a>
-                )}
-              </div>
+  {project.online && (
+    <a
+      href={project.url}
+      target="_blank"
+      rel="noopener noreferrer"
+      className="w-auto md:w-3/12 mx-auto inline-flex items-center justify-center rounded-lg bg-indigo-600 px-4 py-2 text-center text-sm md:text-base font-semibold text-white outline-none ring-indigo-300 transition duration-100 hover:bg-indigo-400 focus-visible:ring active:bg-gray-100"
+    >
+      <BiPlanet className="mr-2" />
+      View Online
+    </a>
+  )}
+</div>
 
-              <div className="mt-4 flex flex-wrap">
+
+              <div className="mt-4 flex flex-wrap mt-12">
                 {project.technologies.map((technology, index) => (
                   <span
                     key={index}

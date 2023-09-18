@@ -1,37 +1,33 @@
-import React, { useState } from 'react';
-import { FaLocationArrow } from 'react-icons/fa';
-import { TbAlignBoxRightBottomFilled } from 'react-icons/tb';
-import Link from 'next/link'; // Import Link from Next.js
+import React from 'react';
+import { FaEnvelope, FaPhoneAlt } from 'react-icons/fa';
+import Link from 'next/link';
 
-const Navbar: React.FC = () => {
-  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
-
-  const handleMobileMenuToggle = () => {
-    setIsMobileMenuOpen(!isMobileMenuOpen);
-  };
-
+const Footer: React.FC = () => {
   return (
-    <div className="mx-auto max-w-screen-2xl px-4 md:px-8 mb-8">
-
-      <footer className="py-4">
-        <hr className="border-gray-300 mb-4"></hr>
-        <div className="container mx-auto px-4">
-          <div className="flex flex-col md:flex-row justify-between items-center">
-            <div className="mb-4 md:mb-0">
-              <p className="text-xl text-gray-600 font-semibold mb-2">Amir Ibraimov</p>
-              <p className="text-black">Front-End Developer</p>
-            </div>
-            <div>
-              <p className="text-black mb-2">
-                <a href="mailto:Ibraimov.amir1996@gmail.com">Ibraimov.amir1996@gmail.com</a>
-              </p>
-              <p className="text-black">+81 070 3137 1220</p>
-            </div>
+    <footer className="bg-gray-800 text-white py-8">
+      <div className="container mx-auto px-4">
+        <div className="flex flex-col md:flex-row justify-between items-center">
+          <div className="mb-4 md:mb-0">
+            <p className="text-2xl font-semibold mb-2">Amir Ibraimov</p>
+            <p className="text-gray-400">Front-End Developer</p>
+          </div>
+          <div>
+            <p className="mb-2 flex items-center">
+              <FaEnvelope className="mr-2" />{' '}
+              <a href="mailto:Ibraimov.amir1996@gmail.com" className="text-gray-400 hover:text-white">
+                Ibraimov.amir1996@gmail.com
+              </a>
+            </p>
+            <p className="flex items-center">
+              <FaPhoneAlt className="mr-2" /> +81 070 3137 1220
+            </p>
           </div>
         </div>
-      </footer>
-    </div>
+      
+   
+      </div>
+    </footer>
   );
 };
 
-export default Navbar;
+export default Footer;
