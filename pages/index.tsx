@@ -15,7 +15,7 @@ const Home = () => {
         <div className="mx-auto max-w-screen-2xl px-4 md:px-8">
        
         <p className="mb-4 text-center text-lg text-gray-500 sm:text-xl md:mb-8">
-  Front-End Developer | Actively Seeking Opportunities in Japan 
+  Front End Developer | Web Developer | Actively Seeking Opportunities in Japan 
 </p>
 
 
