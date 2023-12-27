@@ -99,6 +99,7 @@ const ProjectPage = () => {
             </div>
           </div>
           <div className="pt-12">
+             {/* Display imageUrlDescription images
             {project.imageUrlDescription?.map((imageUrl, index) => (
               <img
                 key={index}
@@ -107,7 +108,7 @@ const ProjectPage = () => {
                 alt={`Photo of ${project.title}`}
                 className="h-full w-full object-contain object-center"
               />
-            ))}
+            ))} */}
           </div>
         </div>
       </div>

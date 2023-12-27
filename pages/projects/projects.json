@@ -1,39 +1,23 @@
 [
   {
     "id": 2,
-    "title": "Framezone - E-Commerce",
-    "description": "Framezone is a modern and feature-rich e-commerce website that offers an exceptional online shopping experience. With its sleek design and user-friendly interface, customers can effortlessly explore a wide range of products, add items to their cart, and securely complete their purchases using the FreedomPay Payment API. Powered by React and styled with Tailwind CSS, the website delivers a seamless and visually appealing interface. The Firebase DB ensures efficient data management, allowing for real-time updates and a reliable shopping experience. Framezone provides customers with a captivating product gallery, interactive comments and reviews, and a streamlined checkout process. Experience the convenience and satisfaction of online shopping at Framezone.",
-    "status": "recent project",
+    "title": "Next.js - E-Commerce",
+    "description": "This is a sleek and high-performance e-commerce platform using Next.js, Tailwind CSS for styling, and Firebase for real-time data management. Integrated the FreedomPay Payment API for secure transactions and implemented an efficient email notification system. The serverless architecture ensures scalability and cost-effectiveness, reflecting a commitment to modern development practices and user-centric design. This Next.js e-commerce site provides boundless growth potential. Easily integrate modules for shipping, advanced product management, customer accounts, promotions, analytics, multilingual support, and mobile applications to stay ahead in the dynamic e-commerce landscape",
+    "status": "",
     "imageUrl": "/images/logo2.png",
     "imageUrlDescription": [
-      "/images/framezone_site.gif"
+      ""
     ],
-    "online":true,
+    "online":false,
     "recent": true,
-    "brief": "E-commerce website",
-    "technologies": ["React", "Tailwind CSS", "Firebase DB", "FreedomPay Payment API", "E-mail Notifications", "Serverless"],
+    "brief": "Fully functioning E-commerce platform",
+    "technologies": ["Next.js", "Tailwind CSS", "Firebase DB", "FreedomPay Payment API", "E-mail Notifications", "Serverless"],
     "url": "https://framezone.kz/",
     "github": "https://github.com/amirqa17/framezone"
     },
       
     
-  {
-    "id": 1,
-    "title": "Paper manufacturer website",
-    "description": "Example of digital transformation of a paper manufacturing company through Next.js-powered website. Leveraging Next.js, Tailwind CSS, Contentful Blog API, i18N internationalization. I delivered a dynamic platform that showcases the company's expertise and product. With a sleek design, seamless user experience, and real-time content updates, the website captivates visitors and reinforces the brand's credibility. Through i18N internationalization, we cater to a global audience, providing content in multiple languages. The integration of the FreedomPay API enables secure and convenient online transactions. Explore the future of paper manufacturing online with our technologically advanced website.",
-    "status": "recent project",
-    "imageUrl": "/images/logo_akky.png",
-    "imageUrlDescription": [
-      "/images/akkypaper_site.png",
-      "/images/akkypaper_site2.png"
-    ],
-    "recent": true,
-    "online":false,
-    "brief": "E-commerce website for pharmaceutical company",
-    "technologies": ["Next.js", "Tailwind CSS","i18n Internationalization", "Contentful API"],
-    "url": "/",
-    "github": "/"
-    },
+ 
 
 
     {
@@ -54,24 +38,9 @@
       "technologies": ["Next.js", "Tailwind CSS", "Firebase DB", "PayBox Payment API", "E-mail Notifications", "CDEK API", "KazPost API"],
       "url": "https://altaysorbent.org",
       "github": "https://github.com/altaysorbent/website"
-  },
+  }
 
-{
-  "id": 7,
-  "title": "Tizim",
-  "description": "A React-based web application showcasing TIZIM Construction Company's top-notch projects. It features a modern design, easy navigation, and interactive elements for an engaging user experience.",
-  "status": "old project",
-  "imageUrl": "/images/tizim.png",
-  "imageUrlDescription": [
-    "/images/tizim.png"
-  ],
-  "recent": true,
-  "online":false,
-  "brief": "E-commerce website",
-  "technologies": ["React", "Tailwind CSS","HTML","CSS"],
-  "url": "/",
-  "github": ""
-}
+
 
   ]
   

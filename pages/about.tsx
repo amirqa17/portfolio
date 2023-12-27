@@ -17,7 +17,7 @@ const About = () => {
           <div className="flex flex-col space-y-8 md:space-y-12">
             <div>
               <p className="text-gray-700 text-lg md:text-xl font-light lg:mt-12">
-                Hi, I am Amir, a passionate Front End Developer based in Japan. I specialize in creating visually stunning and user-friendly web experiences. With a strong foundation in front-end technologies and a knack for design, I am dedicated to crafting digital solutions that delight users.
+              As a passionate and aspiring Front-End Developer with 3+ years of experience, I am dedicated to crafting visually appealing and user-friendly web experiences. I am eager to leverage my technical expertise and creativity to create exceptional online interfaces. Currently, I am exploring opportunities and considering positions in Japan to further develop my career.
               </p>
             </div>
 
@@ -26,15 +26,13 @@ const About = () => {
                 Skills
               </h3>
               <ul className="list-disc list-inside text-gray-700 text-lg md:text-xl font-light">
-                <li>HTML, CSS, SCSS, Tailwind, Bootstrap, Responsive Design</li>
+                <li>HTML, CSS, SCSS, Tailwind, JavaScript</li>
                 <li>React / Next.js</li>
-                <li>Relational Database (MySQL), noSQL Database (Firebase)</li>
-                <li>Experience in API Integrations (Payment Gateway API, Post Service API)</li>
-                <li>Experience in CMS Integration (Contentful)</li>
-                <li>Performance Optimization, Form Validation, SEO Optimization</li>
-                <li>Postman (API Request/Response Testing)</li>
-                <li>I18n Internationalization</li>
-                <li>Git Version Control</li>
+                <li>MySQL,Firebase</li>
+                <li>Experience in API Integrations (Payment Gateway API, Postal Service API)</li>
+                <li>Performance Optimization, Form Validation, SEO Optimization,  Responsive Design</li>
+                <li>i18n Internationalization</li>
+                <li>Git</li>
                 {/* Add more languages as needed */}
               </ul>
             </div>
@@ -43,7 +41,7 @@ const About = () => {
                 Languages
               </h3>
               <ul className="list-disc list-inside text-gray-700 text-lg md:text-xl font-light">
-                <li>English (Full Proficiency)</li>
+                <li>English (Fluent)</li>
                 <li>Japanese (JLPT N3)</li>
                 <li>Russian / Kazakh (Native)</li>
                 {/* Add more languages as needed */}
@@ -55,20 +53,9 @@ const About = () => {
                 Education
               </h3>
               <p className="text-gray-700 text-lg md:text-xl font-light">
-                Bachelors Degree with Honors in Computer Science - Staffordshire University (2019)
+                Bachelors Degree with Honours in Software Engineering - Staffordshire University (2019)
               </p>
             </div>
-
-            <div>
-              <h3 className="text-xl md:text-2xl font-semibold text-gray-800 mb-2">
-                Current Status
-              </h3>
-              <p className="text-gray-700 text-lg md:text-xl font-light">
-                Actively Seeking Opportunities in Japan.
-                Located in Matsudo city, Chiba Prefecture, Japan.
-              </p>
-            </div>
-
             <div>
               <h3 className="text-xl md:text-2xl font-semibold text-gray-800 mb-2">
                 Contact Information

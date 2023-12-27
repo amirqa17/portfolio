@@ -15,7 +15,7 @@ const Home = () => {
         <div className="mx-auto max-w-screen-2xl px-4 md:px-8">
        
         <p className="mb-4 text-center text-lg text-gray-500 sm:text-xl md:mb-8">
-  Front End Developer | Web Developer | Actively Seeking Opportunities in Japan 
+        | Front End Developer | 
 </p>
 
 
@@ -26,7 +26,7 @@ const Home = () => {
             
             <div className="relative flex flex-col items-center p-4 sm:max-w-xl">
 
-  <p className="mb-4 text-center text-lg text-indigo-200 sm:text-xl md:mb-8">Hi, I am Amir, a Front End Developer currently based in Japan with a passion for crafting visually stunning and user-friendly web experiences</p>
+  <p className="mb-4 text-center text-lg text-indigo-200 sm:text-xl md:mb-8">Hi, I am Amir, a Front End Developer currently with a passion for crafting visually stunning and user-friendly web experiences</p>
 
 
   <div className="flex w-full flex-col gap-2.5 sm:flex-row sm:justify-center">
