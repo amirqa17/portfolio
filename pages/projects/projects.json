@@ -1,9 +1,10 @@
 [
+  
   {
     "id": 2,
     "title": "Next.js - E-Commerce",
     "description": "This is a sleek and high-performance e-commerce platform using Next.js, Tailwind CSS for styling, and Firebase for real-time data management. Integrated the FreedomPay Payment API for secure transactions and implemented an efficient email notification system. The serverless architecture ensures scalability and cost-effectiveness, reflecting a commitment to modern development practices and user-centric design. This Next.js e-commerce site provides boundless growth potential. Easily integrate modules for shipping, advanced product management, customer accounts, promotions, analytics, multilingual support, and mobile applications to stay ahead in the dynamic e-commerce landscape",
-    "status": "",
+    "status": "Fullstack",
     "imageUrl": "/images/logo2.png",
     "imageUrlDescription": [
       ""
@@ -17,7 +18,23 @@
     },
       
     
- 
+    {
+      "id": 1,
+      "title": "Paper manufacturer website",
+      "description": "Example of digital transformation of a paper manufacturing company through Next.js-powered website. Leveraging Next.js, Tailwind CSS, Contentful Blog API, i18N internationalization. I delivered a dynamic platform that showcases the company's expertise and product. With a sleek design, seamless user experience, and real-time content updates, the website captivates visitors and reinforces the brand's credibility. Through i18N internationalization, we cater to a global audience, providing content in multiple languages. The integration of the FreedomPay API enables secure and convenient online transactions. Explore the future of paper manufacturing online with our technologically advanced website.",
+      "status": "Front End",
+      "imageUrl": "/images/logo_akky.png",
+      "imageUrlDescription": [
+        "/images/akkypaper_site.png",
+        "/images/akkypaper_site2.png"
+      ],
+      "recent": true,
+      "online":false,
+      "brief": "E-commerce website for pharmaceutical company",
+      "technologies": ["Next.js", "Tailwind CSS","i18n Internationalization", "Contentful API"],
+      "url": "/",
+      "github": "/"
+      },
 
 
     {
@@ -25,7 +42,7 @@
       "title": "Altaysorbent.org",
       "description":"As part of a collaborative effort, I contributed to the development of Altaysorbent.org, a dynamic website built using Next.js. This project aimed to provide a comprehensive online platform for Altaysorbent, a pharmaceutical company specializing in a unique health supplement. The website was designed to cater to a broad international audience, including customers in CIS and European countries. The inclusion of real-time shipping quotes based on destination ensures a user-friendly experience. Payment processing through the PayBox API ensured the safety of users' financial information. Utilizing Contentful as a headless CMS, the project team could manage product information, articles, and other content efficiently. The website was optimized for mobile devices, ensuring a seamless experience across different screen sizes."
 ,
-      "status": "old project",
+      "status": "Fullstack",
       "imageUrl": "/images/altaysorbent.png",
       "imageUrlDescription": [
         "/images/altaysorbent_site.png",

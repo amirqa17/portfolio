@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { FaLocationArrow } from 'react-icons/fa';
 import { TbAlignBoxRightBottomFilled } from 'react-icons/tb';
 import Link from 'next/link'; // Import Link from Next.js
-
+import { BsLinkedin, BsTelegram, BsWhatsapp, BsLine } from 'react-icons/bs';
 const Navbar: React.FC = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
@@ -28,13 +28,21 @@ const Navbar: React.FC = () => {
        
         </div>
         <div className="flex pl-48">
-          <a href="#" className="hidden rounded-lg bg-gray-200 px-4 py-2 text-base font-semibold text-gray-500 outline-none ring-indigo-300 transition duration-100 hover:bg-gray-300 focus-visible:ring active:text-gray-700 lg:text-lg lg:inline-block">
+          <div className="hidden rounded-lg bg-gray-200 px-4 py-2 text-base font-semibold text-gray-500 outline-none ring-indigo-300 transition duration-100 hover:bg-gray-300 focus-visible:ring active:text-gray-700 lg:text-lg lg:inline-block">
             <span className="flex items-center text-black">
-              <FaLocationArrow className="mr-1" />
-             Currently in Japan
-            </span>
-            +81 070 3137 1220
+              
+              <a href="https://www.linkedin.com/in/amiribraimov/" className="ml-4 text-gray-500 hover:text-black" target="_blank" rel="noopener noreferrer">
+            <BsLinkedin size={34} />
           </a>
+          <a href="https://t.me/Amiracle17" className="ml-4 text-gray-500 hover:text-black" target="_blank" rel="noopener noreferrer">
+            <BsTelegram size={34} />
+          </a>
+          <a href="https://wa.me/+8107031371220" className="ml-4 text-gray-500 hover:text-black" target="_blank" rel="noopener noreferrer">
+            <BsWhatsapp size={34} />
+          </a>
+            </span>
+           
+          </div>
         </div>
         <button
           className="md:hidden"
