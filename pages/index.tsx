@@ -28,7 +28,7 @@ const Home = () => {
          
 
           <p className="mb-4 text-center text-lg text-black sm:text-xl md:mb-8">
-            Hi, I'm Amir, a passionate and aspiring Front-End Developer with 3+
+            Hi, I am Amir, a passionate and aspiring Front-End Developer with 3+
             years of experience in web development. I am dedicated to crafting
             visually appealing and user-friendly web experiences. I am eager to
             leverage my technical expertise and creativity to create exceptional
