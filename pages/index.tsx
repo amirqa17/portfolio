@@ -3,7 +3,7 @@ import Link from 'next/link';
 import React from 'react';
 import Projects from './projects';
 import { RiArchiveDrawerLine } from 'react-icons/ri';
-
+import { MdDevices } from "react-icons/md";
 
       
 
@@ -14,29 +14,36 @@ const Home = () => {
       <div className="bg-white pb-6 sm:pb-8 lg:pb-12">
         <div className="mx-auto max-w-screen-2xl px-4 md:px-8">
        
-        <p className="mb-4 text-center text-lg text-gray-500 sm:text-xl md:mb-8">
-        | Front End Developer | 
-</p>
+        <h2 className="mb-4 flex items-center justify-center text-2xl font-bold text-gray-800 md:mb-8 lg:text-3xl xl:mb-12 font-family-myfont">
+            <MdDevices className="mr-2" />
+         Front End Developer
+          </h2>
+          
 
 
-          <section className="min-h-96 relative flex flex-1 shrink-0 items-center justify-center overflow-hidden rounded-lg bg-gray-100 py-12 shadow-lg md:py-12 xl:py-12">
+                      
+        
+
             
-            <div className="absolute inset-0 bg-indigo-600 mix-blend-multiply"></div>
+         
 
-            
-            <div className="relative flex flex-col items-center p-4 sm:max-w-xl">
-
-  <p className="mb-4 text-center text-lg text-indigo-200 sm:text-xl md:mb-8">Hi, I am Amir, a Front End Developer with a passion for crafting visually stunning and user-friendly web experiences</p>
+          <p className="mb-4 text-center text-lg text-black sm:text-xl md:mb-8">
+            Hi, I'm Amir, a passionate and aspiring Front-End Developer with 3+
+            years of experience in web development. I am dedicated to crafting
+            visually appealing and user-friendly web experiences. I am eager to
+            leverage my technical expertise and creativity to create exceptional
+            interfaces for various needs.
+          </p>
 
 
   <div className="flex w-full flex-col gap-2.5 sm:flex-row sm:justify-center">
  
-<Link href="/about" className="inline-block rounded-lg bg-gray-200 px-8 py-3 text-center text-sm font-semibold text-gray-500 outline-none ring-indigo-300 transition duration-100 hover:bg-gray-300 focus-visible:ring active:text-gray-700 md:text-base">Get to know me / Contact me
+<Link href="/about" className="inline-block rounded-lg bg-gray-200 px-8 py-3 text-center text-sm font-semibold text-gray-800 outline-none ring-indigo-300 transition duration-100 hover:bg-gray-300 focus-visible:ring active:text-gray-700 md:text-base">Read more about me
  </Link> 
  </div>
-</div>
 
-          </section> <Projects /> 
+
+          <Projects /> 
         </div>
       </div>
     </Layout>

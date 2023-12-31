@@ -43,7 +43,7 @@ const Projects = () => {
         <div className="mx-auto max-w-screen-3xl px-4 md:px-8">
           <h2 className="mb-4 flex items-center justify-center text-2xl font-bold text-gray-800 md:mb-8 lg:text-3xl xl:mb-12 font-family-myfont">
             <RiArchiveDrawerLine className="mr-2" />
-           Some of My Projects
+           Some of my projects
           </h2>
           
           {/* Iterate over projectsData and render ProjectCard for each project */}

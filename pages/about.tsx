@@ -4,15 +4,15 @@ import Layout from '@/app/layout';
 import { BsLinkedin, BsTelegram, BsWhatsapp } from 'react-icons/bs';
 import { RiArchiveDrawerLine } from 'react-icons/ri';
 import { FaEnvelope, FaPhoneAlt } from 'react-icons/fa';
-
+import { BsFillPersonVcardFill } from "react-icons/bs";
 const About = () => {
   return (
     <Layout>
       <div className="bg-white py-8 md:py-12 h-screen-max">
         <div className="mx-auto max-w-screen-2xl px-4 md:px-8">
-          <h2 className="text-3xl md:text-4xl lg:text-5xl text-center text-gray-800 font-bold mb-8">
-            <RiArchiveDrawerLine className="mr-2 text-black inline-block" />
-            Brief Introduction
+        <h2 className="mb-4 flex items-center justify-center text-2xl font-bold text-gray-800 md:mb-8 lg:text-3xl xl:mb-12 font-family-myfont">
+            <BsFillPersonVcardFill className="mr-2" />
+        Brief introduction
           </h2>
           <div className="flex flex-col space-y-8 md:space-y-12">
             <div>
