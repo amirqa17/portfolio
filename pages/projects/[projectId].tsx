@@ -4,6 +4,7 @@ import projectsData from './projects.json';
 import Layout from '@/app/layout';
 import { BiArrowToLeft, BiPlanet } from 'react-icons/bi';
 import { AiFillGithub, AiOutlineArrowLeft } from 'react-icons/ai';
+import { BsGithub } from 'react-icons/bs';
 import Link from 'next/link';
 
 interface Project {
@@ -67,13 +68,28 @@ const ProjectPage = () => {
                 {project.description}
               </p>
 
+
+              <div className="mt-auto flex items-center">
+  {project.hasgithub && (
+    <a
+      href={project.github}
+      target="_blank"
+      rel="noopener noreferrer"
+      className="w-auto md:w-6/12 mx-auto inline-flex items-center justify-center rounded-lg bg-gray-700 px-4 py-2 text-center text-sm md:text-base font-semibold text-white outline-none ring-indigo-300 transition duration-100 hover:bg-gray-800 focus-visible:ring active:bg-gray-100"
+    >
+      <BsGithub className="mr-2" />
+      View on Github
+    </a>
+  )}
+</div>
+
               <div className="mt-auto flex items-center">
   {project.online && (
     <a
       href={project.url}
       target="_blank"
       rel="noopener noreferrer"
-      className="w-auto md:w-3/12 mx-auto inline-flex items-center justify-center rounded-lg bg-indigo-600 px-4 py-2 text-center text-sm md:text-base font-semibold text-white outline-none ring-indigo-300 transition duration-100 hover:bg-indigo-400 focus-visible:ring active:bg-gray-100"
+      className="w-auto md:w-6/12 mx-auto inline-flex items-center justify-center rounded-lg bg-gray-700 px-4 py-2 text-center text-sm md:text-base font-semibold text-white outline-none ring-indigo-300 transition duration-100 hover:bg-gray-800 focus-visible:ring active:bg-gray-100"
     >
       <BiPlanet className="mr-2" />
       View Online

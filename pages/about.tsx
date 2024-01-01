@@ -16,19 +16,17 @@ const About = () => {
           </h2>
           <div className="flex flex-col space-y-8 md:space-y-12">
             <div>
-              <p className="text-gray-700 text-lg md:text-xl font-light lg:mt-12">
+              <p className="mb-4 text-center text-lg text-black sm:text-xl md:mb-8">
               As a passionate and aspiring Front-End Developer with 3+ years of experience, I am dedicated to crafting visually appealing and user-friendly web experiences. I am eager to leverage my technical expertise and creativity to create exceptional online interfaces. Currently, I am exploring opportunities and considering positions in Japan to further develop my career.
               </p>
             </div>
-
+         
             <div>
               <h3 className="text-xl md:text-2xl font-semibold text-gray-800 mb-2">
                 Skills
               </h3>
               <ul className="list-disc list-inside text-gray-700 text-lg md:text-xl font-light">
-                <li>HTML, CSS, SCSS, Tailwind, JavaScript</li>
-                <li>React / Next.js</li>
-                <li>MySQL,Firebase</li>
+                <li>HTML, CSS, SCSS, Tailwind CSS, JavaScript, React, Next.js, MySQL, Firestore</li>
                 <li>Experience in API Integrations (Payment Gateway API, Postal Service API)</li>
                 <li>Performance Optimization, Form Validation, SEO Optimization,  Responsive Design</li>
                 <li>i18n Internationalization</li>
@@ -42,8 +40,8 @@ const About = () => {
               </h3>
               <ul className="list-disc list-inside text-gray-700 text-lg md:text-xl font-light">
                 <li>English (Fluent)</li>
-                <li>Japanese (JLPT N3)</li>
-                <li>Russian / Kazakh (Native)</li>
+                <li>Japanese (JLPT N3). Aiming for N2 in July 2024.</li>
+                <li>Russian (Native)</li>
                 {/* Add more languages as needed */}
               </ul>
             </div>
@@ -53,7 +51,7 @@ const About = () => {
                 Education
               </h3>
               <p className="text-gray-700 text-lg md:text-xl font-light">
-                Bachelors Degree with Honours in Software Engineering - Staffordshire University (2019)
+              Staffordshire University /  BSc (Hons) Software Engineering
               </p>
             </div>
             <div>
@@ -66,17 +64,7 @@ const About = () => {
               <p className="text-gray-700 text-lg md:text-xl font-light">
                 Phone: <span className="text-black">+81 070 3137 1220</span>
               </p>
-              <div className="flex items-center mt-4">
-                <a href="https://www.linkedin.com/in/amiribraimov/" target="_blank" rel="noopener noreferrer">
-                  <BsLinkedin size={34} className="text-indigo-600 hover:text-indigo-800" />
-                </a>
-                <a href="https://t.me/Amiracle17" className="ml-4" target="_blank" rel="noopener noreferrer">
-                  <BsTelegram size={34} className="text-indigo-600 hover:text-indigo-800" />
-                </a>
-                <a href="https://wa.me/+77776341393" className="ml-4" target="_blank" rel="noopener noreferrer">
-                  <BsWhatsapp size={34} className="text-indigo-600 hover:text-indigo-800" />
-                </a>
-              </div>
+              
             </div>
           </div>
         </div>

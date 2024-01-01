@@ -17,7 +17,7 @@ const Navbar: React.FC = () => {
         <div className="container mx-auto flex items-center justify-between">
           <Link href="/" passHref className="inline-flex items-center gap-2.5 text-xl font-bold text-black md:text-3xl" aria-label="logo">
             <TbAlignBoxRightBottomFilled className="text-2xl lg:text-4xl" />
-            / Amir I.
+            / Amir Ibraimov
           </Link>
 
           <div className="md:flex space-x-4 hidden mx-auto">
@@ -29,45 +29,45 @@ const Navbar: React.FC = () => {
       About Me
    
   </Link>
+
 </div>
 
           <div className="flex pl-48 ">
-            <div className="hidden rounded-lg  px-4 py-2 text-base font-semibold text-gray-800 outline-none ring-indigo-300 transition duration-100 focus-visible:ring active:text-gray-700 lg:text-lg lg:inline-block">
-              <span className="flex items-center text-black ">
-                <a
-                  href="https://www.linkedin.com/in/amiribraimov/"
-                  className="ml-4 text-blue-800 hover:text-blue-900"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <BsLinkedin size={34} />
-                </a>
-                <a
-                  href="https://t.me/Amiracle17"
-                  className="ml-4 text-blue-500 hover:text-blue-600"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <BsTelegram size={34} />
-                </a>
-                <a
-                  href="https://wa.me/+8107031371220"
-                  className="ml-4 text-green-600 hover:text-green-700"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <BsWhatsapp size={34} />
-                </a>
-                <a
-                  href="https://github.com/amirqa17"
-                  className="ml-4 text-gray-700 hover:text-black"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <BsGithub size={34} />
-                </a>
-              </span>
-            </div>
+            
+          <div className="hidden lg:flex pl-48 space-x-4">
+  <a
+    href="https://www.linkedin.com/in/amiribraimov/"
+    className="text-blue-800 hover:text-blue-900 transition-transform transform hover:scale-110"
+    target="_blank"
+    rel="noopener noreferrer"
+  >
+    <BsLinkedin size={34} />
+  </a>
+  <a
+    href="https://t.me/Amiracle17"
+    className="text-blue-500 hover:text-blue-600 transition-transform transform hover:scale-110"
+    target="_blank"
+    rel="noopener noreferrer"
+  >
+    <BsTelegram size={34} />
+  </a>
+  <a
+    href="https://wa.me/+8107031371220"
+    className="text-green-600 hover:text-green-700 transition-transform transform hover:scale-110"
+    target="_blank"
+    rel="noopener noreferrer"
+  >
+    <BsWhatsapp size={34} />
+  </a>
+  <a
+    href="https://github.com/amirqa17"
+    className="text-gray-700 hover:text-black transition-transform transform hover:scale-110"
+    target="_blank"
+    rel="noopener noreferrer"
+  >
+    <BsGithub size={34} />
+  </a>
+</div>
           </div>
           <button className="md:hidden" onClick={handleMobileMenuToggle} aria-label="Toggle Menu">
             {isMobileMenuOpen ? (

@@ -13,27 +13,29 @@ const Home = () => {
     <Layout>
       <div className="bg-white pb-6 sm:pb-8 lg:pb-12">
         <div className="mx-auto max-w-screen-2xl px-4 md:px-8">
-       
+      
         <h2 className="mb-4 flex items-center justify-center text-2xl font-bold text-gray-800 md:mb-8 lg:text-3xl xl:mb-12 font-family-myfont">
             <MdDevices className="mr-2" />
-         Front End Developer
+            Front End Developer
           </h2>
           
 
-
+      
                       
         
 
             
          
+          <div className="container mx-auto px-4 md:w-8/12">
+  <p className="mb-4 text-center text-lg text-black sm:text-xl md:mb-8">
+    Hello there! I'm Amir, a dedicated Front-End Developer with over 3 years of experience in the dynamic world of web development. 🚀
 
-          <p className="mb-4 text-center text-lg text-black sm:text-xl md:mb-8">
-            Hi, I am Amir, a passionate and aspiring Front-End Developer with 3+
-            years of experience in web development. I am dedicated to crafting
-            visually appealing and user-friendly web experiences. I am eager to
-            leverage my technical expertise and creativity to create exceptional
-            interfaces for various needs.
-          </p>
+    My passion lies in creating visually stunning and user-friendly web experiences that leave a lasting impression. I thrive on turning ideas into innovative interfaces, blending technical prowess with a touch of creativity.
+
+    Currently I am located in Japan and looking for new opportunities 👨‍💻✨
+  </p>
+</div>
+
 
 
   <div className="flex w-full flex-col gap-2.5 sm:flex-row sm:justify-center">
