@@ -28,7 +28,7 @@ const Home = () => {
          
           <div className="container mx-auto px-4 md:w-8/12">
   <p className="mb-4 text-center text-lg text-black sm:text-xl md:mb-8">
-    Hello there! I'm Amir, a dedicated Front-End Developer with over 3 years of experience in the dynamic world of web development. 🚀
+    Hello there! I am Amir, a dedicated Front-End Developer with over 3 years of experience in the dynamic world of web development. 🚀
 
     My passion lies in creating visually stunning and user-friendly web experiences that leave a lasting impression. I thrive on turning ideas into innovative interfaces, blending technical prowess with a touch of creativity.
 
