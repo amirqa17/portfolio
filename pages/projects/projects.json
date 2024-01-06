@@ -1,88 +1,113 @@
 [
-  
   {
-    "id": 1,
-    "title": "Next.js - E-Commerce",
-    "description": "This project showcases an E-commerce platform developed with Next.js, utilizing Tailwind CSS, Lazy Loading, and integration with the FreedomPay API. Reviews and items are efficiently stored in Firebase's Firestore database. Email notifications are implemented using sendinblue service. You can read more about this project and its use case on github page.",
-    "status": "Available on Github",
-    "imageUrl": "/images/shop.png",
-    "imageUrlDescription": [
-      ""
+    "id": 2,
+    "title": "Dynamic Contentful Blog with full i18n Internationalization Integration",
+    "description": "A dynamic Next.js blog powered by Contentful, seamlessly integrated with i18n for full internationalization. This project features a multilingual interface that not only translates the website but also intelligently fetches and displays blog posts in the chosen language. Leverage the power of Contentful for efficient content management, and provide a localized, user-friendly experience with i18n.",
+    "status": "",
+    "hasgithub": true,
+    "imageUrl": "/images/blog.png",
+    "imageUrlDescription": ["/images/blog.png"],
+    "recent": false,
+    "online": false,
+    "brief": "i18n that besides website itself, translates contentful content as well",
+    "technologies": [
+      "Next.js",
+      "Tailwind CSS",
+      "i18n Internationalization",
+      "Contentful API"
     ],
-    "online":false,
+    "url": "/",
+    "github": "https://github.com/amirqa17/i18-n-internatonalized-contentful-"
+  },
+  {
+    "id": 3,
+    "title": "AKKY LTD - Office Paper Manufacturer",
+    "description": "I had the privilege of working on a website project for a distinguished paper manufacturer. Through thoughtful design and user-focused development, I contributed to creating an online presence that reflects the essence of their craft. The goal was to showcase their quality products and commitment to sustainability. It was a rewarding experience to bring their story to life in the digital space, emphasizing simplicity and functionality to enhance the user experience. Explore the project to witness the seamless blend of aesthetics and purpose in the world of paper manufacturing.",
+    "status": "",
+    "imageUrl": "/images/logo_akky.png",
+    "imageUrlDescription": [
+  
+    ],
     "recent": true,
-    "brief": "Fully functioning E-commerce platform",
-    "technologies": ["Next.js", "Tailwind CSS", "Firebase DB", "FreedomPay Payment API", "E-mail Notifications", "Serverless"],
+    "online": false,
+    "brief": "I had the privilege of working on a website project for a paper manufacturer",
+    "technologies": [
+      "React",
+      "Material UI",
+      "i18n Internationalization",
+      "News Feed"
+    ],
+    "url": "/",
+    "github": "/"
+  },
+
+  {
+    "id": 5,
+    "title": "Potfolio Website",
+    "description": "This clean and straightforward React portfolio website is designed to showcase my projects. The user-friendly interface ensures easy navigation, providing a glimpse into my work with clear visuals and brief descriptions. The site is responsive, offering a seamless experience on various devices. Explore my skills, check out featured projects, and connect with me through linked social media accounts. The \"About Me\" section provides a glimpse into my journey. This portfolio is a simple, effective way to discover my passion for creating meaningful digital content.",
+    "status": "",
+    "imageUrl": "/images/portfolio.png",
+    "imageUrlDescription": [
+    
+    ],
+    "recent": false,
+    "online": false,
+    "brief": "The idea was to make a plain, easy to read/use website that has functionality to showcase projects.",
+    "technologies": [
+      "Next.js",
+      "TailwindCSS",
+      "Semantic tags"
+    ],
     "url": "",
     "hasgithub":true,
+    "github": "https://github.com/amirqa17/portfolio"
+  },
+  {
+    "id": 1,
+    "title": "E-Commerce platform on React",
+    "description": "This project showcases an E-commerce platform developed with Next.js, Tailwind CSS, Lazy Loading, and integration with the FreedomPay API. Reviews and items are efficiently stored in Firebase's Firestore database. Email notifications are implemented using sendinblue service. You can read more about this project and its use case on github page.",
+    "status": "",
+    "imageUrl": "/images/shop.png",
+    "imageUrlDescription": [""],
+    "online": false,
+    "recent": true,
+    "brief": "Fully functioning E-commerce platform",
+    "technologies": [
+      "Next.js",
+      "Tailwind CSS",
+      "Firebase DB",
+      "FreedomPay Payment API",
+      "E-mail Notifications",
+      "Serverless"
+    ],
+    "url": "",
+    "hasgithub": true,
     "github": "https://github.com/amirqa17/nextjs-e-commerce"
-    },
-      
+  },
 
-
-    
-    {
-      "id": 2,
-      "title": "Dynamic Contentful Blog with full i18n Internationalization Integration",
-      "description": "A dynamic Next.js blog powered by Contentful, seamlessly integrated with i18n for full internationalization. This project features a multilingual interface that not only translates the website but also intelligently fetches and displays blog posts in the chosen language. Leverage the power of Contentful for efficient content management, and provide a localized, user-friendly experience with i18n.",
-      "status": "Available on Github",
-      "hasgithub":true,
-      "imageUrl": "/images/blog.png",
-      "imageUrlDescription": [
-        "/images/blog.png"
-      ],
-      "recent": true,
-      "online": false,
-      "brief": "This project uses Contentful for Blog, and i18n to switch between languages and conditionally load relative blog post's fields, so that blog feed is translated as well.",
-      "technologies": ["Next.js", "Tailwind CSS", "i18n Internationalization", "Contentful API"],
-      "url": "/",
-      "github": "https://github.com/amirqa17/i18-n-internatonalized-contentful-"
-    },
-    
-
-
-    {
-      "id": 3,
-      "title": "Website for a paper manufacturer",
-      "description": "I had the privilege of working on a website project for a distinguished paper manufacturer. Through thoughtful design and user-focused development, I contributed to creating an online presence that reflects the essence of their craft. The goal was to showcase their quality products and commitment to sustainability. It was a rewarding experience to bring their story to life in the digital space, emphasizing simplicity and functionality to enhance the user experience. Explore the project to witness the seamless blend of aesthetics and purpose in the world of paper manufacturing.",
-      "status": "",
-      "imageUrl": "/images/logo_akky.png",
-      "imageUrlDescription": [
-        "/images/akkypaper_site.png",
-        "/images/akkypaper_site2.png"
-      ],
-      "recent": true,
-      "online": false,
-      "brief": "I had the privilege of working on a website project for a paper manufacturer",
-      "technologies": ["React", "Material UI", "i18n Internationalization", "News Feed"],
-      "url": "/",
-      "github": "/"
-    },
-
-
-
-    
-    {
-      "id": 4,
-      "title": "Altaysorbent.org",
-      "description":"As part of a collaborative effort, I contributed to the development of Altaysorbent.org, a dynamic website built using Next.js. This project aimed to provide a comprehensive online platform for Altaysorbent, a pharmaceutical company specializing in a unique health supplement. The website was designed to cater to a broad international audience, including customers in CIS and European countries. The inclusion of real-time shipping quotes based on destination ensures a user-friendly experience. Payment processing through the PayBox API ensured the safety of users' financial information. Utilizing Contentful as a headless CMS, the project team could manage product information, articles, and other content efficiently. The website was optimized for mobile devices, ensuring a seamless experience across different screen sizes."
-,
-      "status": "Available Onlinie",
-      "imageUrl": "/images/altaysorbent.png",
-      "imageUrlDescription": [
-        "/images/altaysorbent_site.png",
-        "/images/altaysorbent_site2.png",
-        "/images/altaysorbent_site3.png"
-      ],
-      "recent": false,
-      "online":true,
-      "brief": "E-commerce website",
-      "technologies": ["React", "PayBox Payment API", "E-mail Notifications", "CDEK API", "KazPost API"],
-      "url": "https://altaysorbent.org",
-      "github": "https://github.com/altaysorbent/website"
-  }
-
-
-
-  ]
   
+
+  
+  {
+    "id": 4,
+    "title": "Online Pharmacy Platform",
+    "description": "As part of a collaborative effort, I contributed to the development of a dynamic website built using React. This project aimed to provide a comprehensive online platform for Arnika, a pharmaceutical company specializing in a unique health supplement. The website was designed to cater to a broad international audience, including customers in CIS and European countries. The inclusion of real-time shipping quotes based on destination ensures a user-friendly experience. Payment processing through the PayBox API ensured the safety of users' financial information. Utilizing Contentful as a headless CMS, the project team could manage product information, articles, and other content efficiently. The website was optimized for mobile devices, ensuring a seamless experience across different screen sizes.",
+    "status": "",
+    "imageUrl": "/images/altaysorbent.png",
+    "imageUrlDescription": [
+      
+    ],
+    "recent": false,
+    "online": false,
+    "brief": "E-commerce website",
+    "technologies": [
+      "React",
+      "PayBox Payment API",
+      "E-mail Notifications",
+      "CDEK API",
+      "KazPost API"
+    ],
+    "url": "https://altaysorbent.org",
+    "github": "https://github.com/altaysorbent/website"
+  }
+]

@@ -1,16 +1,11 @@
 import React, { useState } from 'react';
-import Layout from '@/app/layout';
 import { useRouter } from 'next/router';
 import projectsData from './projects.json';
 import { RiArchiveDrawerLine } from 'react-icons/ri';
-import { GiPerspectiveDiceSixFacesRandom } from 'react-icons/gi';
-import Link from 'next/link';
 
 const Projects = () => {
   const router = useRouter();
-  const [visibleProjects, setVisibleProjects] = useState(4); // Initial number of visible projects
-
-  const [sortedProjects, setSortedProjects] = useState(projectsData);
+  const [visibleProjects, setVisibleProjects] = useState(6); // Initial number of visible projects
   const tagColors = [
     "bg-blue-500",
     "bg-purple-500",
@@ -18,39 +13,19 @@ const Projects = () => {
     "bg-yellow-500",
     // Add more colors as needed
   ];
-
   const handleProjectClick = (projectId: number) => {
     router.push(`/projects/${projectId}`);
   };
-
-  const handleRandomProjectClick = () => {
-    const randomProjectId = Math.floor(Math.random() * projectsData.length) + 1;
-    router.push(`/projects/${randomProjectId}`);
-  };
- 
-  const handleSortByTechnology = (technology: string) => {
-    const sortedProjects = projectsData.filter((project) =>
-      project.technologies.includes(technology)
-    );
-    setSortedProjects(sortedProjects);
-  };
   const handleShowMoreClick = () => {
     // Increase the number of visible projects by 4 on each click
-    setVisibleProjects((prevVisibleProjects) => prevVisibleProjects + 4);
+    setVisibleProjects((prevVisibleProjects) => prevVisibleProjects + 6);
   };
   return (
- 
-    <div className="bg-white py-6 sm:py-8 lg:py-12 lg:px-4 ">
-    <div className="pacman-container">
-      <div className="pacman"></div>
-    </div>
-
-    <div className="mx-auto lg:w-8/12 sm:w-full max-w-screen-3xl px-4 md:px-8 w-full">
-      <h2 className="mb-4 flex items-center justify-center text-2xl font-bold text-gray-800 md:mb-8 lg:text-3xl xl:mb-12 font-family-myfont">
+    <>
+      <h2 className="mb-4 flex items-center justify-center text-2xl font-bold text-gray-800 md:mb-8 lg:text-3xl xl:mb-12">
         <RiArchiveDrawerLine className="mr-2" />
         Some of my projects
       </h2>
-
       <div className="mb-4 grid grid-cols-1 gap-4 sm:grid-cols-2 md:mb-8 md:grid-cols-2 md:gap-6 xl:gap-8 ">
         {projectsData.slice(0, visibleProjects).map((project) => (
           <ProjectCard
@@ -63,15 +38,16 @@ const Projects = () => {
       </div>
 
       {visibleProjects < projectsData.length && (
-        <button
+       <div className="flex w-full flex-col gap-2.5 sm:flex-row sm:justify-center">
+       <button
           onClick={handleShowMoreClick}
-          className="inline-block rounded-lg bg-gray-200 px-8 py-3 text-center text-sm font-semibold text-gray-800 outline-none ring-indigo-300 transition duration-100 hover:bg-gray-300 focus-visible:ring active:text-gray-700 md:text-base"
+          className="inline-block rounded-lg bg-gray-200 px-8 py-3 text-center text-sm font-semibold text-gray-800 outline-none ring-indigo-300 transition duration-100 hover:bg-gray-300 focus-visible:ring active:text-gray-700 md:text-base"  role="button"
         >
           Show more projects
-        </button>
+        </button></div>
       )}
-    </div>
-  </div>
+    </>
+
   
   );
 };
@@ -105,8 +81,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ project, onClick, tagColors }
   const cardClassName = `group relative flex h-48 items-end overflow-hidden bg-gray-100 shadow-lg md:h-80 `;
 
   return (
-    <a
-    href="#"
+    <button
     className={`group relative flex h-48 items-end overflow-hidden bg-gray-100 shadow-lg md:h-80`}
     onClick={onClick}
     onMouseEnter={handleMouseEnter}
@@ -146,7 +121,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ project, onClick, tagColors }
         </div>
       </div>
     )}
-  </a>
+  </button>
 );
 };
 
