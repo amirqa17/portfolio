@@ -2,13 +2,14 @@ import React from 'react';
 import Layout from '@/app/layout';
 import { BsFillPersonVcardFill } from 'react-icons/bs';
 
-const Section = ({ title, content }) => (
+const Section = ({ title, content }: { title: string; content: React.ReactNode }) => (
   <div className="mb-8">
     <h3 className="text-xl md:text-2xl font-semibold text-gray-800 mb-2">{title}</h3>
-    <hr></hr>
+    <hr />
     {content}
   </div>
 );
+
 const About = () => {
   return (
     <Layout>
