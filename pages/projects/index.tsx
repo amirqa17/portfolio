@@ -8,6 +8,8 @@ import Link from 'next/link';
 
 const Projects = () => {
   const router = useRouter();
+  const [visibleProjects, setVisibleProjects] = useState(4); // Initial number of visible projects
+
   const [sortedProjects, setSortedProjects] = useState(projectsData);
   const tagColors = [
     "bg-blue-500",
@@ -32,44 +34,44 @@ const Projects = () => {
     );
     setSortedProjects(sortedProjects);
   };
-
+  const handleShowMoreClick = () => {
+    // Increase the number of visible projects by 4 on each click
+    setVisibleProjects((prevVisibleProjects) => prevVisibleProjects + 4);
+  };
   return (
  
-      <div className="bg-white py-6 sm:py-8 lg:py-12 lg:px-4">
-        <div className="pacman-container">
-          <div className="pacman"></div>
-        </div>
+    <div className="bg-white py-6 sm:py-8 lg:py-12 lg:px-4 ">
+    <div className="pacman-container">
+      <div className="pacman"></div>
+    </div>
 
-        <div className="mx-auto max-w-screen-3xl px-4 md:px-8">
-          <h2 className="mb-4 flex items-center justify-center text-2xl font-bold text-gray-800 md:mb-8 lg:text-3xl xl:mb-12 font-family-myfont">
-            <RiArchiveDrawerLine className="mr-2" />
-           Some of my projects
-          </h2>
-          
-          {/* Iterate over projectsData and render ProjectCard for each project */}
-        
-          <div className="mb-4 grid grid-cols-1 gap-4 sm:grid-cols-2 md:mb-8 md:grid-cols-2 md:gap-6 xl:gap-8">
-            {projectsData.map((project) => (
+    <div className="mx-auto lg:w-8/12 sm:w-full max-w-screen-3xl px-4 md:px-8 w-full">
+      <h2 className="mb-4 flex items-center justify-center text-2xl font-bold text-gray-800 md:mb-8 lg:text-3xl xl:mb-12 font-family-myfont">
+        <RiArchiveDrawerLine className="mr-2" />
+        Some of my projects
+      </h2>
 
-
-
-
-<ProjectCard
-  key={project.id}
-  project={project}
-  onClick={() => handleProjectClick(project.id)} // Pass the project ID
-  tagColors={tagColors}
-/>
-
-
-
-
-
-           
-            ))}
-          </div>
-        </div>
+      <div className="mb-4 grid grid-cols-1 gap-4 sm:grid-cols-2 md:mb-8 md:grid-cols-2 md:gap-6 xl:gap-8 ">
+        {projectsData.slice(0, visibleProjects).map((project) => (
+          <ProjectCard
+            key={project.id}
+            project={project}
+            onClick={() => handleProjectClick(project.id)}
+            tagColors={tagColors}
+          />
+        ))}
       </div>
+
+      {visibleProjects < projectsData.length && (
+        <button
+          onClick={handleShowMoreClick}
+          className="inline-block rounded-lg bg-gray-200 px-8 py-3 text-center text-sm font-semibold text-gray-800 outline-none ring-indigo-300 transition duration-100 hover:bg-gray-300 focus-visible:ring active:text-gray-700 md:text-base"
+        >
+          Show more projects
+        </button>
+      )}
+    </div>
+  </div>
   
   );
 };
@@ -100,12 +102,12 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ project, onClick, tagColors }
     setHovered(false);
   };
 
-  const cardClassName = `group relative flex h-48 items-end overflow-hidden rounded-lg bg-gray-100 shadow-lg md:h-80`;
+  const cardClassName = `group relative flex h-48 items-end overflow-hidden bg-gray-100 shadow-lg md:h-80 `;
 
   return (
     <a
     href="#"
-    className={`group relative flex h-48 items-end overflow-hidden rounded-lg bg-gray-100 shadow-lg md:h-80`}
+    className={`group relative flex h-48 items-end overflow-hidden bg-gray-100 shadow-lg md:h-80`}
     onClick={onClick}
     onMouseEnter={handleMouseEnter}
     onMouseLeave={handleMouseLeave}
@@ -126,8 +128,11 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ project, onClick, tagColors }
     )}
 
     {hovered && (
-      <div className="absolute inset-0 flex flex-col justify-end p-4 bg-gradient-to-t from-gray-800 via-transparent to-transparent">
-        <h3 className="text-lg font-semibold text-white">{project.title}</h3>
+        <div className="absolute inset-0 flex flex-col justify-end p-4" style={{ background: 'linear-gradient(to top, gray, transparent)', backdropFilter: 'blur(3px)' }}>
+        <h3 className="text-lg md:text-xl lg:text-2xl xl:text-3xl font-semibold text-white ">
+  {project.title}
+</h3>
+
         <p className="text-sm text-white">{project.brief}</p>
         <div className="mt-2 flex flex-wrap">
           {project.technologies.map((technology, index) => (
