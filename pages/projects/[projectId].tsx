@@ -4,6 +4,7 @@ import projectsData from "./projects.json";
 import Layout from "@/app/layout";
 import { BiPlanet } from "react-icons/bi";
 import { BsGithub } from "react-icons/bs";
+import Link from "next/link";
 
 const ProjectPage = () => {
   const router = useRouter();
@@ -24,7 +25,7 @@ const ProjectPage = () => {
     return (
       <Layout>
       <div className="mb-4 flex items-center justify-center text-2xl font-bold text-gray-800 md:mb-8 lg:text-3xl xl:mb-12">
-        Project not found. <a href="/">Return to homepage</a>
+        Project not found. <Link href="/">Return to homepage</Link>
       </div></Layout>
     );
   }
@@ -58,7 +59,7 @@ const ProjectPage = () => {
 
               <div className="mt-auto flex items-center">
                 {project.hasgithub && (
-                  <a
+                  <Link
                     href={project.github}
                     target="_blank"
                     rel="noopener noreferrer"
@@ -66,13 +67,13 @@ const ProjectPage = () => {
                   >
                     <BsGithub className="mr-2" />
                     View on Github
-                  </a>
+                  </Link>
                 )}
               </div>
 
               <div className="mt-auto flex items-center">
                 {project.online && (
-                  <a
+                  <Link
                     href={project.url}
                     target="_blank"
                     rel="noopener noreferrer"
@@ -80,7 +81,7 @@ const ProjectPage = () => {
                   >
                     <BiPlanet className="mr-2" />
                     View Online
-                  </a>
+                  </Link>
                 )}
               </div>
 
