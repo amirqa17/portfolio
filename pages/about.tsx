@@ -27,7 +27,7 @@ const About = () => {
           Brief Introduction
         </h2>
         <article className="container mx-auto px-4 md:w-9/12">
-          <p className="mb-6 text-left text-lg text-gray-700 md:text-xl">
+          <p className="mb-6 text-justify text-lg text-gray-700 md:text-xl">
             As a Front-End Developer with over 3 years of experience, I am
             committed to creating visually appealing and user-friendly web
             experiences. I believe in the power of collaboration and teamwork,
