@@ -3,10 +3,15 @@ import Link from "next/link";
 import React from "react";
 import Projects from "./projects";
 import { MdDevices } from "react-icons/md";
-
+import Metadata from "@/app/MetaData";
 const Home = () => {
   return (
+
     <Layout>
+         <Metadata
+    title={'Amir Ibraimov - Front-End Developer'}
+    description={'A portfolio website for Amir Ibraimov, a front-end Developer'} imageUrl={""}
+  />
       <div className="bg-white pb-6 sm:pb-8 lg:pb-12 mx-auto max-w-screen-2xl px-4 md:px-8">
           <section className="mb-8">
             <h2 className="mb-4 flex items-center justify-center text-2xl font-bold text-gray-800 md:mb-8 lg:text-3xl xl:mb-12">

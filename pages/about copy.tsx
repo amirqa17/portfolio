@@ -22,9 +22,10 @@ const About = () => {
   return (
     <Layout>
       <Metadata
-    title={'About me'}
-    description={'Brief introduction'} imageUrl={""}
-  />
+        title={"About me"}
+        description={"Brief introduction"}
+        imageUrl={""}
+      />
       <div className="bg-white pb-6 sm:pb-8 lg:pb-12 mx-auto max-w-screen-2xl px-4 md:px-8">
         <h2 className="mb-4 flex items-center justify-center text-2xl font-bold text-gray-800 md:mb-8 lg:text-3xl xl:mb-12">
           <BsFillPersonVcardFill className="mr-2 inline-block text-2xl md:text-3xl lg:text-4xl" />

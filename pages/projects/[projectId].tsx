@@ -5,7 +5,7 @@ import Layout from "@/app/layout";
 import { BiPlanet } from "react-icons/bi";
 import { BsGithub } from "react-icons/bs";
 import Link from "next/link";
-
+import Metadata from "@/app/MetaData";
 const ProjectPage = () => {
   const router = useRouter();
   const { projectId } = router.query;
@@ -32,6 +32,10 @@ const ProjectPage = () => {
 
   return (
     <Layout>
+        <Metadata
+    title={project.title}
+    description={project.description} imageUrl={project.imageUrl}
+  />
       <div className="bg-white pb-6 sm:pb-8 lg:pb-12 mx-auto max-w-screen-2xl px-4 md:px-8">
       <section className="mb-8">
           <h2 className="mb-4 flex items-center justify-center text-2xl font-bold text-gray-800 md:mb-8 lg:text-3xl xl:mb-12 mx-auto">
